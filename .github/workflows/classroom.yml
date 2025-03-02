@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install geopandas matplotlib numpy pandas seaborn folium mapclassify xarray rasterio contextily nbformat nbconvert jupyter_client scipy shapely
+          pip install geopandas matplotlib numpy pandas seaborn folium mapclassify xarray rasterio contextily nbformat nbconvert jupyter_client scipy shapely ipython
       - name: Run tests
         run: |
           python test-script.py
