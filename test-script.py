@@ -168,5 +168,5 @@ class TestGISAssignment(unittest.TestCase):
         result = compare_projections(test_gdf1, test_gdf2)
         
         # Check if it returns a dictionary
-        self.assertIsInstance(result, dict, 
+        self.assertIsInstance(result, dict, "compare_projections should return a dictionary")
                 

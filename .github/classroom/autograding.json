@@ -1,0 +1,14 @@
+{
+    "tests": [
+      {
+        "name": "Run test script",
+        "setup": "",
+        "run": "python test-script.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 100
+      }
+    ]
+  }
