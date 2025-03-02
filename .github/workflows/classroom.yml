@@ -18,7 +18,7 @@ jobs:
       - name: Prepare for testing
         run: |
           # Convert student notebook to Python script
-          cp solution.ipynb student_submission.ipynb
+          cp student_submission.ipynb
       - name: Run tests
         run: |
           python .github/classroom/autograder_test.py
