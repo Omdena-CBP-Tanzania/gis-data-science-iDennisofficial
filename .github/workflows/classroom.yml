@@ -14,15 +14,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install geopandas matplotlib numpy pandas seaborn folium mapclassify xarray rasterio contextily nbformat nbconvert jupyter_client
-      - name: Prepare for testing
-        run: |
-          # Convert student notebook to Python script
-          cp student_submission.ipynb
+          pip install geopandas matplotlib numpy pandas seaborn folium mapclassify xarray rasterio contextily nbformat nbconvert jupyter_client scipy shapely
       - name: Run tests
         run: |
-          python .github/classroom/autograder_test.py
-      - name: Feedback
-        if: always()
-        run: cat .github/classroom/test_results.txt
+          python test-script.py
       - uses: education/autograding@v1
