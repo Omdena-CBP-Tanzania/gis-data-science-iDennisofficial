@@ -7,7 +7,7 @@ jobs:
     name: Autograding
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@4
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
@@ -25,4 +25,4 @@ jobs:
       - name: Feedback
         if: always()
         run: cat .github/classroom/test_results.txt
-      - uses: education/autograding@v3
+      - uses: education/autograding@v1
